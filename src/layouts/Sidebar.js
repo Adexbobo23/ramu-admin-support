@@ -5,32 +5,15 @@ import { Link, useLocation } from "react-router-dom";
 
 const Sidebar = () => {
   let location = useLocation();
-  const [roleDropdownOpen, setRoleDropdownOpen] = useState(false);
-  const [stockDropdownOpen, setStockDropdownOpen] = useState(false);
   const [helpDropdownOpen, setHelpDropdownOpen] = useState(false);
-  const [blogDropdownOpen, setBlogDropdownOpen] = useState(false);
-  const [emailTemplateDropdownOpen, setEmailTemplateDropdownOpen] = useState(false);
 
-  // Function to toggle the Role Management dropdown
-  const toggleRoleDropdown = () => {
-    setRoleDropdownOpen(!roleDropdownOpen);
-  };
 
-  const toggleStockDropdown = () => {
-    setStockDropdownOpen(!stockDropdownOpen);
-  };
 
   const toggleHelpDropdown = () => {
     setHelpDropdownOpen(!helpDropdownOpen);
   };
 
-  const toggleBlogDropdown = () => {
-    setBlogDropdownOpen(!blogDropdownOpen);
-  };
 
-  const toggleEmailTemplateDropdown = () => {
-    setEmailTemplateDropdownOpen(!emailTemplateDropdownOpen);
-  };
 
   return (
     <div className="bg-dark">
@@ -61,6 +44,62 @@ const Sidebar = () => {
             >
               <i className="bi bi-people"></i>
               <span className="ms-3 d-inline-block">All Users</span>
+            </Link>
+          </NavItem>
+
+          <NavItem className="sidenav-bg">
+            <Link
+              to="/all-portfolio"
+              className={
+                location.pathname === "/all-portfolio"
+                  ? "active nav-link py-3"
+                  : "nav-link py-3"
+              }
+            >
+              <i className="bi bi-bag"></i>
+              <span className="ms-3 d-inline-block">Portfolios</span>
+            </Link>
+          </NavItem>
+
+          <NavItem className="sidenav-bg">
+            <Link
+              to="/all-overview"
+              className={
+                location.pathname === "/all-overview"
+                  ? "active nav-link py-3"
+                  : "nav-link py-3"
+              }
+            >
+              <i className="bi bi-people"></i>
+              <span className="ms-3 d-inline-block">Customer Overview</span>
+            </Link>
+          </NavItem>
+
+          <NavItem className="sidenav-bg">
+            <Link
+              to="/channels"
+              className={
+                location.pathname === "/channels"
+                  ? "active nav-link py-3"
+                  : "nav-link py-3"
+              }
+            >
+              <i className="bi bi-phone"></i>
+              <span className="ms-3 d-inline-block">Communication</span>
+            </Link>
+          </NavItem>
+
+          <NavItem className="sidenav-bg">
+            <Link
+              to="/referral"
+              className={
+                location.pathname === "/referral"
+                  ? "active nav-link py-3"
+                  : "nav-link py-3"
+              }
+            >
+              <i className="bi bi-people"></i>
+              <span className="ms-3 d-inline-block">Referral Support</span>
             </Link>
           </NavItem>
 

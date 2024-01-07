@@ -1,0 +1,54 @@
+// CustomerOverview.scss
+
+.customer-overview {
+    padding: 20px;
+  
+    h4 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+  
+      th, td {
+        padding: 8px;
+        border: 1px solid #ddd;
+        text-align: left;
+        vertical-align: top;
+      }
+  
+      th.label {
+        font-weight: bold;
+        white-space: nowrap;
+        transform: rotate(-90deg);
+        transform-origin: left top;
+      }
+  
+      td {
+        vertical-align: middle;
+      }
+  
+      .action-buttons {
+        display: flex;
+  
+        button {
+          margin-right: 5px;
+          font-size: 14px;
+  
+          &.primary-btn {
+            background-color: #007bff;
+            border-color: #007bff;
+  
+            &:hover {
+              background-color: #0069d9;
+              border-color: #0062cc;
+            }
+          }
+        }
+      }
+    }
+  }
+  

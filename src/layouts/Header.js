@@ -74,8 +74,8 @@ const Header = () => {
             </Link>
           </NavItem>
           <NavItem>
-            <Link to="/stocks-listing" className="nav-link">
-            <span className="ms-3 d-inline-block text-white">Stock Listings</span>
+            <Link to="/all-portfolio" className="nav-link">
+            <span className="ms-3 d-inline-block text-white">Portfolios</span>
             </Link>
           </NavItem>
           <UncontrolledDropdown inNavbar nav>
@@ -87,12 +87,12 @@ const Header = () => {
                 <DropdownItem>All User</DropdownItem>
               </Link>
 
-              <Link to="user-registration" className="nav-link">
-                <DropdownItem>Add User</DropdownItem>
+              <Link to="all-overview" className="nav-link">
+                <DropdownItem>Customer Overview</DropdownItem>
               </Link>
               <DropdownItem divider />
-              <Link to="/stocks-listing" className="nav-link">
-                <DropdownItem>Stock Management</DropdownItem>
+              <Link to="/channels" className="nav-link">
+                <DropdownItem>Communication Channels</DropdownItem>
               </Link> 
             </DropdownMenu>
           </UncontrolledDropdown>

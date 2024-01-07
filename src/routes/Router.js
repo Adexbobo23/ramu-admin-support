@@ -17,6 +17,10 @@ import WalletManagement from "../views/ui/WalletManagement.js";
 import AdminLogin from "../views/ui/AdminLogin.js";
 import ContactFormData from "../views/ui/ContactFormData.js";
 import ReportSpamData from "../views/ui/ReportSpamData.js"
+import CustomerPortfolio from "../views/ui/CustomerPortfolio.js";
+import CustomerOverview from "../views/ui/CustomerOverview.js";
+import CommunicationChannels from "../views/ui/CommunicationChannels.js";
+import ReferralComponent from "../views/ui/ReferralComponent.js";
 
 /****Layouts*****/
 const FullLayout = lazy(() => import("../layouts/FullLayout.js"));
@@ -47,6 +51,10 @@ const ThemeRoutes = [
       { path: "/login", exact: true, element: <AdminLogin /> },
       { path: "/contact", exact: true, element: <ContactFormData/> },
       { path: "/report-scam", exact: true, element: <ReportSpamData /> },
+      { path: "/all-portfolio", exact: true, element: <CustomerPortfolio /> },
+      { path: "/all-overview", exact: true, element: <CustomerOverview/> },
+      { path: "/channels", exact: true, element: <CommunicationChannels/> },
+      { path: "/referral", exact: true, element: <ReferralComponent/> },
     ],
   },
 ];

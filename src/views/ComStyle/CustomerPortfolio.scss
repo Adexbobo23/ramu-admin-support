@@ -1,0 +1,72 @@
+.customer-portfolio {
+    max-width: 800px;
+    margin: 20px auto;
+  
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+  
+      th, td {
+        padding: 15px;
+        border: 1px solid #e0e0e0;
+      }
+  
+      th {
+        background-color: #f5f5f5;
+        font-weight: bold;
+        color: #333;
+        text-align: left;
+      }
+  
+      td {
+        button {
+          margin-right: 8px;
+        }
+      }
+    }
+    
+    tbody tr {
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: #f9f9f9;
+      }
+    }
+  
+    .actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .edit-btn, .delete-btn {
+      padding: 8px 12px;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      transition: background-color 0.3s;
+      outline: none;
+  
+      &:hover {
+        background-color: #4CAF50;
+        color: #fff;
+      }
+    }
+  
+    .delete-btn {
+      background-color: #ff5454;
+      margin-left: 5px;
+  
+      &:hover {
+        background-color: #e53935;
+      }
+    }
+  }
+  
