@@ -53,7 +53,7 @@ const AdminLogin = ({ onAuthentication }) => {
 
   return (
     <div className="admin-login-container">
-      <h1 className="admin-login-title">ADMIN LOGIN</h1>
+      <h1 className="admin-login-title">STAFF LOGIN</h1>
       {error && <p className="admin-login-error">{error}</p>}
       <div className="admin-login-form">
         <input
