@@ -103,6 +103,20 @@ const Sidebar = () => {
             </Link>
           </NavItem>
 
+          <NavItem className="sidenav-bg">
+            <Link
+              to="/ticket"
+              className={
+                location.pathname === "/ticket"
+                  ? "active nav-link py-3"
+                  : "nav-link py-3"
+              }
+            >
+              <i className="bi bi-people"></i>
+              <span className="ms-3 d-inline-block">Support Ticket Status</span>
+            </Link>
+          </NavItem>
+
           {/* Help and Support Dropdown */}
           <NavItem className="sidenav-bg">
             <Link

@@ -21,6 +21,7 @@ import CustomerPortfolio from "../views/ui/CustomerPortfolio.js";
 import CustomerOverview from "../views/ui/CustomerOverview.js";
 import CommunicationChannels from "../views/ui/CommunicationChannels.js";
 import ReferralComponent from "../views/ui/ReferralComponent.js";
+import SupportTicketing from "../views/ui/SupportTicketing.js";
 
 /****Layouts*****/
 const FullLayout = lazy(() => import("../layouts/FullLayout.js"));
@@ -54,7 +55,8 @@ const ThemeRoutes = [
       { path: "/all-portfolio", exact: true, element: <CustomerPortfolio /> },
       { path: "/all-overview", exact: true, element: <CustomerOverview/> },
       { path: "/channels", exact: true, element: <CommunicationChannels/> },
-      { path: "/referral", exact: true, element: <ReferralComponent/> },
+      { path: "/referral", exact: true, element: <ReferralComponent /> },
+      { path: "/ticket", exact: true, element: <SupportTicketing /> },
     ],
   },
 ];
